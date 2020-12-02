@@ -83,7 +83,7 @@ body nav #navWeb .navbar ul li a {
 
 /*--------------------------------------------------------------------------- HOME ------------------------------------------------------------*/
 body #home {
-  background: url(images/fondd.jpg);
+  background: url(images/fond.jpg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
