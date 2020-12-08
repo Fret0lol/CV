@@ -288,10 +288,10 @@ body #projets .article article .text {
 body #projets .article article .text p {
   font-size: 0.9em;
   color: white;
-  height: 8vh;
+  min-height: 8vh;
 }
 body #projets .article article .text a {
-  margin: 2em;
+  margin: 1vh 2em;
 }
 body #projets .article article .text a i {
   font-size: 25px;
@@ -303,7 +303,7 @@ body #projets .article article .titre {
 
   background-color: #FFD66D;
 }
-body #projets .article article .titre h4 {
+body #projets .article article .titre p {
   margin: 0.3vh 0 0 0.5vw;
   font-size: 1.4em;
 }
@@ -327,14 +327,15 @@ body #competences aside {
   margin-top: 10vh;
 }
 body #competences aside h1 {
-  margin: 10vh 0;
+  margin: 10vh 0 0;
   font-size: 12vw;
   color: rgba(255, 214, 109, 0.5);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: right;
 }
-body #competences .text{
+body #competences .content{
   display: flex;
+  flex-flow: r;
   justify-content: center;
   flex-wrap: wrap-reverse;
   align-items: center;
@@ -343,13 +344,27 @@ body #competences .text{
   color: #FFD66D;
   font-size: 1.3em;
 }
-body #competences .text p{
-  width: 60%;
-}
-body #competences .text img{
+body #competences .content img{
   border-radius: 50%;
   height: 350px;
   margin: 2vw;
+}
+body #competences .content .text {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+body #competences .content .text .description p{
+  margin: 0 1vh;
+}
+body #competences .content .text .competences {
+  margin-top: 3vh;
+}
+body #competences .content .text .competences i {
+  font-size: 5vh;
 }
 @media screen and (max-width: 768px) {
   html #parcours #timeline #timeline,
@@ -511,6 +526,9 @@ body #parcours #timeline #timeline .timeline-item .timeline-icon {
   body #projets .article article .img {
     width: 100%;
     background-size: cover;
+  }
+  body #competences .content .text {
+    flex-flow: column nowrap;
   }
 }
 
