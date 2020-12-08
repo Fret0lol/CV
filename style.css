@@ -319,51 +319,52 @@ body #projets .article article .date p {
 
 /*-----------------------------------------COMPETENCES-------------------------------------------*/
 
-body #competences{
+body #profil{
   margin-top: 10vw;
+  color: #FFD66D;
+  font-size: 2.5vh;
 }
-body #competences aside {
+body #profil aside {
   width: 100%;
   margin-top: 10vh;
 }
-body #competences aside h1 {
+body #profil aside h1 {
   margin: 10vh 0 0;
   font-size: 12vw;
   color: rgba(255, 214, 109, 0.5);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: right;
 }
-body #competences .content{
+body #profil .content{
   display: flex;
-  flex-flow: r;
+  flex-flow: row wrap;
   justify-content: center;
   flex-wrap: wrap-reverse;
   align-items: center;
-
- 
-  color: #FFD66D;
-  font-size: 1.3em;
 }
-body #competences .content img{
+body #profil .content img{
   border-radius: 50%;
   height: 350px;
   margin: 2vw;
 }
-body #competences .content .text {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  flex-flow: row nowrap;
-  align-content: center;
+body #profil .row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   justify-content: center;
-  text-align: center;
 }
-body #competences .content .text .description p{
-  margin: 0 1vh;
+body #profil .title {
+  font-size: 2vw;
+  font-weight: 700;
 }
-body #competences .content .text .competences {
-  margin-top: 3vh;
+body #profil .content .row .description{
+  width: 50vw;
 }
-body #competences .content .text .competences i {
+body #profil .competence {
+  width: 90vw;
+  margin: auto;
+}
+body #profil .content .row .competences i {
   font-size: 5vh;
 }
 @media screen and (max-width: 768px) {
@@ -527,7 +528,7 @@ body #parcours #timeline #timeline .timeline-item .timeline-icon {
     width: 100%;
     background-size: cover;
   }
-  body #competences .content .text {
+  body #profil .content .text {
     flex-flow: column nowrap;
   }
 }
