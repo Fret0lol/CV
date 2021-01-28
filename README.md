@@ -1,2 +1,2 @@
 # CV
-https://fret0lol.github.io/SitePersonnel/
+ https://fret0lol.github.io/CV/
